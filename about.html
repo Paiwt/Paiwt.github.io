@@ -6,6 +6,48 @@
 -->
 <html>
 	<head>
+		
+			<style>
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
 		<title>About - Paiwt - The Art Creation Game + Unique Crytocurrency Art Market</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -97,7 +139,7 @@
 										<p>The creator of Paiwt and ArtWaters, Daniel is an American designer who works in art and entertainment. For years Daniel researched and developed the correct formulations for a safe, mess free project he named ArtWaters.com.</p>
 										<footer>
 											<ul class="buttons">
-												<li><a href="https://fineartamerica.com/profiles/daniel-bohnett.html" class="button small">Learn More</a></li>
+												<li><a href="https://fineartamerica.com/profiles/daniel-bohnett.html" class="button small"><span>Hover Learn More</a></li></span></button>
 											</ul>
 										</footer>
 									</section>
